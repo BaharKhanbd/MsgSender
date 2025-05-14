@@ -1,0 +1,213 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.message_send_sms"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:6:5-67
+15-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:6:22-64
+16    <!-- Required permissions -->
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:3:5-64
+17-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:3:22-62
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:4:5-80
+18-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:4:22-78
+19    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+19-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:5:5-75
+19-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:5:22-73
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:7:5-79
+20-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:7:22-76
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+21-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:8:5-77
+21-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:8:22-74
+22    <uses-permission android:name="android.permission.CALL_PHONE" />
+22-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:9:5-69
+22-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:9:22-66
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:4:5-80
+23-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:4:22-78
+24    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+24-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:11:5-80
+24-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:11:22-77
+25    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+25-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:12:5-70
+25-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:12:22-67
+26    <uses-permission android:name="android.permission.READ_SMS" />
+26-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:13:5-67
+26-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:13:22-64
+27    <uses-permission android:name="android.permission.CALL_PHONE" />
+27-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:9:5-69
+27-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:9:22-66
+28    <!--
+29 Required to query activities that can process text, see:
+30         https://developer.android.com/training/package-visibility and
+31         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+32
+33         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+34    -->
+35    <queries>
+35-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:52:5-57:15
+36        <intent>
+36-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:53:9-56:18
+37            <action android:name="android.intent.action.PROCESS_TEXT" />
+37-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:54:13-72
+37-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:54:21-70
+38
+39            <data android:mimeType="text/plain" />
+39-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:55:13-50
+39-->D:\Link-Up Technology 2024\Test App\message_send_sms\android\app\src\main\AndroidManifest.xml:55:19-48
+40        </intent>
+41    </queries>
+42
+43    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+43-->[:telephony] C:\Users\LinkUp\AppData\Local\Pub\Cache\hosted\pub.dev\telephony-0.2.0\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+43-->[:telephony] C:\Users\LinkUp\AppData\Local\Pub\Cache\hosted\pub.dev\telephony-0.2.0\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+44
+45    <permission
+45-->[androidx.core:core:1.13.1] C:\Users\LinkUp\.gradle\caches\transforms-3\4cefa050b0c4ea9b1f45909d19944071\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+46        android:name="com.example.message_send_sms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.13.1] C:\Users\LinkUp\.gradle\caches\transforms-3\4cefa050b0c4ea9b1f45909d19944071\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.13.1] C:\Users\LinkUp\.gradle\caches\transforms-3\4cefa050b0c4ea9b1f45909d19944071\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.example.message_send_sms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.13.1] C:\Users\LinkUp\.gradle\caches\transforms-3\4cefa050b0c4ea9b1f45909d19944071\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.13.1] C:\Users\LinkUp\.gradle\caches\transforms-3\4cefa050b0c4ea9b1f45909d19944071\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+50
+51    <application
+52        android:name="android.app.Application"
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.13.1] C:\Users\LinkUp\.gradle\caches\transforms-3\4cefa050b0c4ea9b1f45909d19944071\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+54        android:debuggable="true"
+55        android:extractNativeLibs="false"
+56        android:icon="@mipmap/ic_launcher"
+57        android:label="message_send_sms" >
+58        <activity
+59            android:name="com.example.message_send_sms.MainActivity"
+60            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+61            android:exported="true"
+62            android:hardwareAccelerated="true"
+63            android:launchMode="singleTop"
+64            android:taskAffinity=""
+65            android:theme="@style/LaunchTheme"
+66            android:windowSoftInputMode="adjustResize" >
+67
+68            <!--
+69                 Specifies an Android theme to apply to this Activity as soon as
+70                 the Android process has started. This theme is visible to the user
+71                 while the Flutter UI initializes. After that, this theme continues
+72                 to determine the Window background behind the Flutter UI.
+73            -->
+74            <meta-data
+75                android:name="io.flutter.embedding.android.NormalTheme"
+76                android:resource="@style/NormalTheme" />
+77
+78            <intent-filter>
+79                <action android:name="android.intent.action.MAIN" />
+80
+81                <category android:name="android.intent.category.LAUNCHER" />
+82            </intent-filter>
+83        </activity>
+84        <!--
+85             Don't delete the meta-data below.
+86             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+87        -->
+88        <meta-data
+89            android:name="flutterEmbedding"
+90            android:value="2" />
+91
+92        <activity
+92-->[:url_launcher_android] C:\Users\LinkUp\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.16\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+93            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+93-->[:url_launcher_android] C:\Users\LinkUp\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.16\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+94            android:exported="false"
+94-->[:url_launcher_android] C:\Users\LinkUp\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.16\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+95            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+95-->[:url_launcher_android] C:\Users\LinkUp\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.16\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+96
+97        <uses-library
+97-->[androidx.window:window:1.2.0] C:\Users\LinkUp\.gradle\caches\transforms-3\b61292485483c7499e83c4f5c6f9bd1a\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+98            android:name="androidx.window.extensions"
+98-->[androidx.window:window:1.2.0] C:\Users\LinkUp\.gradle\caches\transforms-3\b61292485483c7499e83c4f5c6f9bd1a\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+99            android:required="false" />
+99-->[androidx.window:window:1.2.0] C:\Users\LinkUp\.gradle\caches\transforms-3\b61292485483c7499e83c4f5c6f9bd1a\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+100        <uses-library
+100-->[androidx.window:window:1.2.0] C:\Users\LinkUp\.gradle\caches\transforms-3\b61292485483c7499e83c4f5c6f9bd1a\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+101            android:name="androidx.window.sidecar"
+101-->[androidx.window:window:1.2.0] C:\Users\LinkUp\.gradle\caches\transforms-3\b61292485483c7499e83c4f5c6f9bd1a\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+102            android:required="false" />
+102-->[androidx.window:window:1.2.0] C:\Users\LinkUp\.gradle\caches\transforms-3\b61292485483c7499e83c4f5c6f9bd1a\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+103
+104        <provider
+104-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LinkUp\.gradle\caches\transforms-3\a4def40035927cb6d856303427b50933\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+105            android:name="androidx.startup.InitializationProvider"
+105-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LinkUp\.gradle\caches\transforms-3\a4def40035927cb6d856303427b50933\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+106            android:authorities="com.example.message_send_sms.androidx-startup"
+106-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LinkUp\.gradle\caches\transforms-3\a4def40035927cb6d856303427b50933\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+107            android:exported="false" >
+107-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LinkUp\.gradle\caches\transforms-3\a4def40035927cb6d856303427b50933\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+108            <meta-data
+108-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LinkUp\.gradle\caches\transforms-3\a4def40035927cb6d856303427b50933\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+109                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+109-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LinkUp\.gradle\caches\transforms-3\a4def40035927cb6d856303427b50933\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+110                android:value="androidx.startup" />
+110-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LinkUp\.gradle\caches\transforms-3\a4def40035927cb6d856303427b50933\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+111            <meta-data
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+112                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+113                android:value="androidx.startup" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+114        </provider>
+115
+116        <receiver
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+117            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+118            android:directBootAware="false"
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+119            android:enabled="true"
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+120            android:exported="true"
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+121            android:permission="android.permission.DUMP" >
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+122            <intent-filter>
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+123                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+124            </intent-filter>
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+126                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+127            </intent-filter>
+128            <intent-filter>
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+129                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+130            </intent-filter>
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+132                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LinkUp\.gradle\caches\transforms-3\ec9fdb662d7f540d2603f340c7b5ab14\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+133            </intent-filter>
+134        </receiver>
+135    </application>
+136
+137</manifest>
